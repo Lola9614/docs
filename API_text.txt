@@ -1,0 +1,6 @@
+API for text info
+
+GET /textInfo/uppercaseLetter?Text=text
+GET /textInfo/lowercaseLetter?text=text
+GET /textInfo/specialLetter?text=text
+GET /textInfo/numeric?text=text
