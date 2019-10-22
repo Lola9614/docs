@@ -1,6 +1,26 @@
 API for text info
 
-GET /textInfo/uppercaseLetter?Text=text
-GET /textInfo/lowercaseLetter?text=text
-GET /textInfo/specialLetter?text=text
-GET /textInfo/numeric?text=text
+GET /textInfo/uppercaseLetter?text=text   - check if text contain any uppercase letters
+	
+	possible reponses: true - if contains any uppercase letter
+			   false - if not contains any uppercase letter 
+
+GET /textInfo/lowercaseLetter?text=text - check if text contain any lowercase letters
+
+	possible reponses: true - if contains any lowercase letter
+			   false -  if not contains any lowercase letter 
+
+GET /textInfo/specialLetter?text=text  - check if text contain any special letters
+
+	possible reponses: { "response": true} - if contains any special letter
+			   { "response": false} - if not contains any specia letter 
+	
+GET /textInfo/numeric?text=text - check if text contain any numbers
+
+	possible reponses: { "response": true} - if contains any numeric 
+			   { "response": false} - if not contains any numeric 
+
+GET /testInfo/subsequence?text=text&subsequence=subsequence - check if text contain subsequence
+
+	possible reponses: { "response": true} - if contains any subsequence
+			   { "response": false} - if not contains any subsequence
